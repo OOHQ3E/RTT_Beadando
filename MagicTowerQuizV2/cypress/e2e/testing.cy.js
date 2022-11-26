@@ -14,7 +14,7 @@ describe('Register a new user', () => {
     });
 })
 describe('Logs in a new user with wrong login credentials', () => {
-    it('Visit main page', () => {
+    it('Visit main page then attempts wrong login', () => {
         cy.visit('http://127.0.0.1:8000/')
     })
     it('Login ', function () {
@@ -29,7 +29,7 @@ describe('Logs in a new user with wrong login credentials', () => {
 })
 
 describe('Logs in a new user with correct credentials', () => {
-    it('Visit main page', () => {
+    it('Visit main page then attempts correct login', () => {
         cy.visit('http://127.0.0.1:8000/')
     })
     it('Login ', function () {
@@ -55,6 +55,48 @@ describe('Add a new question with 2 options to database correctly', () => {
         cy.get('#QuestionTitle').type("test question title")
         cy.get("#Ans1").type("test answer 1")
         cy.get("#Ans2").type("test answer 2")
+        cy.get("#correct").select("2. válasz")
+        cy.get('#Submit').click()
+
+    });
+})
+describe('Add a new question with 2 options to database correctly', () => {
+    it('Add a new question with 2 options to database correctly', () => {
+        cy.visit('http://127.0.0.1:8000/')
+        cy.get('svg').click()
+        cy.get('[id=Login]').click()
+        cy.contains("Bejelentkezés")
+        cy.get('#email').type("test@email.com")
+        cy.get('#password').type("testpassword")
+        cy.get('[id=LoginButtonSend]').click()
+
+        cy.get("#AddNewQuestion").click()
+        cy.get('#QuestionTitle').type("test question title 2")
+        cy.get("#Ans1").type("test answer 1")
+        cy.get("#Ans2").type("test answer 2")
+        cy.get("#Ans2").type("test answer 3")
+        cy.get("#Ans2").type("test answer 4")
+        cy.get("#correct").select("2. válasz")
+        cy.get('#Submit').click()
+
+    });
+})
+describe('Add a new question with 2 options to database correctly', () => {
+    it('Add a new question with 2 options to database correctly', () => {
+        cy.visit('http://127.0.0.1:8000/')
+        cy.get('svg').click()
+        cy.get('[id=Login]').click()
+        cy.contains("Bejelentkezés")
+        cy.get('#email').type("test@email.com")
+        cy.get('#password').type("testpassword")
+        cy.get('[id=LoginButtonSend]').click()
+
+        cy.get("#AddNewQuestion").click()
+        cy.get('#QuestionTitle').type("test question title 3")
+        cy.get("#Ans1").type("test answer 1")
+        cy.get("#Ans2").type("test answer 2")
+        cy.get("#Ans2").type("test answer 3")
+        cy.get("#Ans2").type("test answer 4")
         cy.get("#correct").select("2. válasz")
         cy.get('#Submit').click()
 
@@ -154,7 +196,7 @@ describe('Starts a quiz', () => {
         cy.url("http://127.0.0.1:8000/quiz")
     });
 })
-describe.only('Starts a quiz', () => {
+describe('Starts a quiz', () => {
     it('Does the quiz', () => {
         cy.visit('http://127.0.0.1:8000/')
         cy.get("#name").type("Tester")
