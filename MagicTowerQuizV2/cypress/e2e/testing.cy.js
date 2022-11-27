@@ -74,8 +74,8 @@ describe('Add a new question with 2 options to database correctly', () => {
         cy.get('#QuestionTitle').type("test question title 2")
         cy.get("#Ans1").type("test answer 1")
         cy.get("#Ans2").type("test answer 2")
-        cy.get("#Ans2").type("test answer 3")
-        cy.get("#Ans2").type("test answer 4")
+        cy.get("#Ans3").type("test answer 3")
+        cy.get("#Ans4").type("test answer 4")
         cy.get("#correct").select("2. válasz")
         cy.get('#Submit').click()
 
@@ -92,11 +92,11 @@ describe('Add a new question with 2 options to database correctly', () => {
         cy.get('[id=LoginButtonSend]').click()
 
         cy.get("#AddNewQuestion").click()
-        cy.get('#QuestionTitle').type("test question title 3")
+        cy.get('#QuestionTitle').type("test question with 3 options")
         cy.get("#Ans1").type("test answer 1")
         cy.get("#Ans2").type("test answer 2")
-        cy.get("#Ans2").type("test answer 3")
-        cy.get("#Ans2").type("test answer 4")
+        cy.get("#Ans3").type("test answer 3")
+        cy.get("#Ans4").type("test answer 4")
         cy.get("#correct").select("2. válasz")
         cy.get('#Submit').click()
 
@@ -113,7 +113,13 @@ describe('Add a new question with 2 options to database with too long input', ()
         cy.get('[id=LoginButtonSend]').click()
 
         cy.get("#AddNewQuestion").click()
-        cy.get('#QuestionTitle').type("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+        cy.get('#QuestionTitle').type("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
         cy.get("#Ans1").type("test answer 1")
         cy.get("#Ans2").type("test answer 2")
         cy.get("#correct").select("2. válasz")
