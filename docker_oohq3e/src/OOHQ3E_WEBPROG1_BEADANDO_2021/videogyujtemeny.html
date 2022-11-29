@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type ="text/css" href="css/style.css">
+<link rel = "icon" type="image/png" href="./images/video-favicon.png">
+<title>Videógyűjtemény</title>
+</head>
+
+<body>
+    <div class="wrapper">
+       <header>
+           <h1>Videógyűjtemény</h1>
+           <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="oneletrajz.html">Önéletrajz</a></li>
+                <li><a href="orarend.html">Órarend</a></li>
+                <li><a href="kepgaleria.html">Képgaléria</a></li>
+                <li><a class="jelenlegi">Videógyűjtemény</a></li>
+                <li><a href="sakktabla.html">Sakktábla</a></li>
+            </ul>
+        </nav>
+       </header>
+
+    <div class="content">
+    <main> 
+      <p class="info">Az eredeti videók a Youtube ikonra kattintva új lapon megnyílva elérhetőek.</p>
+          <div id="pagination">
+               <button class="rejtett" onclick="Kategorizalas('0')"></button>
+               <button class="butn active" onclick="Kategorizalas('1')"> 1</button>
+               <button class="butn" onclick="Kategorizalas('2')"> 2</button>
+          </div>
+          
+          <div class="videogaleria">
+            <div class="column 1">
+                <div class="videok">
+                    <video controls> <source src="./images/videok/small_man.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Kisember a pohárban</h4><p>Rövid animáció egy kisemberről a pohárban, aki boldog.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=emItHl4sP7M"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 1">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/corn.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Kukorica</h4> <p>Kukoricát beutató rövid videó.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=j8qp3ITVqY0"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 1">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/dumbledore.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Dumbledoor nyugodtan kérdezte</h4> <p>Dumbledoor nyugodtan kérdezte Harry-t, hogy ő tette-e be a nevét a tűz serlegébe.</p> 
+                  <a target="blank" href="https://www.youtube.com/watch?v=IdoD2147Fik"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 1">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/dailydose.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Napi internet dózis</h4> <p>Videóösszevágás, ami remélhetőleg feldobja az ember napját.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=jg9IerUwohw"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 1">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/kirby.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Hogyan rajzoljunk Kirbyt</h4> <p>Egy bemutató, hogy hogyan kell Kirbyt rajzolnunk pofon egyszerűen.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=-oXfpfbHZJU"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 2">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/linkedin.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Hogyan készítsünk LinkedIn fiókot</h4> <p>Ez a videó megtanítja nekünk, hogy hogyan legyünk sikeresek azzal, hogy egy LinkedIn fiókot készítünk.</p> 
+                  <a target="blank" href="https://www.youtube.com/watch?v=_PUJDbc8ox4"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 2">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/spider.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Általában próbálom megmenteni a pókokat</h4> <p>Ebben a videóban azokról a kis élőlényekről van szó, amit mindenki csak megölni akar.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=mUdyrftryd0"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+          <div class="column 2">
+            <div class="videok">
+              <video controls> <source src="./images/videok/disclaimer_song.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+              <h4>Disclaimer Song</h4><p>Ez a [TÖRÖLT CSATORNA] egyik legikonikusabb jelenete, ahol felhívják a figyelmünket arra, hogy az alábbiakat ne próbáljuk ki otthon. Már szinte csak ez alapján maradhat emlékünkben. Memento Mori.</p> 
+              <a target="blank" href="https://www.youtube.com/watch?v=ppYYWdQlVNw"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 2">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/smooth_brain.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Sokszor esem zavarba</h4> <p>A videóban arról van szó, hogy a beszélő sokszor esik zavarba és ezzel kevésbé érzi magát eszesnek.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=t3ac2vFulZI"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+            </div>
+          </div>
+            <div class="column 2">
+                <div class="videok">
+                  <video controls> <source src="./images/videok/dopamine.mp4" type="video/mp4">A böngészője nem támogatja ezt a formátumot!</video>
+                  <h4>Dopamin boost</h4> <p>Dopamine: amire mindannyiunknak szüksége van néhanapján. Ha kicsit lehangoltak vagyunk, nem kell mást tenni, csak a legközelebb lévő *szelíd* kutyát (vagy macskát) megsimogatjuk.</p>
+                  <a target="blank" href="https://www.youtube.com/watch?v=2vC3BHaMScs"><img src="./images/youtube-icon.png" alt="Eredeti videó"></a>
+                </div>
+            </div>
+
+          </div>
+
+    </main>
+    
+    </div>
+    <footer>
+        <div class="extra">© Bagoly Gábor - OOHQ3E, 2021 <br>Developed by Bagoly Gábor </div>
+    </footer>
+</div>
+
+<script>
+
+
+            Kategorizalas("1")
+            function Kategorizalas(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "0") c = "";
+              for (i = 0; i < x.length; i++) {
+                Elrejtes(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) Kategorizalt(x[i], "show");
+              }
+            }
+
+              function Kategorizalt(element, name) 
+            {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            function Elrejtes(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            var Gombok = document.getElementById("pagination");
+            var btns = Gombok.getElementsByClassName("butn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+</script>
+
+</body>
+</html>

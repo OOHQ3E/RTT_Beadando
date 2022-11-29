@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bejelentkezés</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="css/loginstyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Bejelentkezés</h1>
+        </header>
+    
+      <main> 
+        <h3>Üdvözlöm az oldalon!<br>Jelentkezzen be, vagy regisztráljon!</h3>
+
+        <form action="login.php" method="post">
+            <table>
+		        <tr><td>Felhasználónév: </td><td><input type="text" name="username" pattern="^[-a-zA-Z0-9]+$" required size="15"></td></tr>
+		        <tr><td>Jelszó: </td><td><input type="password" name="passwd" pattern="[A-Z a-z 0-9]*" required size="15"></td></tr>
+                <tr style="text-align:right;"><td><a href='regform.php'><input class="button" type='button' value='Regisztráció' name='reg'></a></td>
+                <td><input class="button" type="submit" value="Bejelentkezés" name="send"></td></tr>
+	        </table>
+        </form>
+      </main>
+    </div>
+    
+    <footer><div class="extra">© Bagoly Gábor - OOHQ3E, 2021 <br>Developed by Bagoly Gábor</div></footer>
+</body>
+</html>

@@ -1,0 +1,444 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../images/background.jpg") repeat;
+    background-color: rgba(0, 0, 0, .5);
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1300px;
+    margin: 40px auto;
+    box-shadow:  0 0 30px rgba(0, 0, 0, 0.85);
+}
+header{
+    background: url("../images/bg-header.bmp");
+    height: 120px;
+    position: relative;
+}
+header h1{
+    margin: 0;
+    display: inline-block;
+    padding: 15px 10px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 5px rgba(100, 100, 100, .5);
+}
+nav{
+    background: rgba(153, 0, 0, .8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+nav ::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+.jelenlegi{
+    background: rgba(0, 0, 0, .4);
+}
+nav a:hover{
+    background: rgba(0, 0, 0, .4);
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li{
+    float:left;
+}
+main {
+    overflow: auto;
+    font-size: 15px;
+    background: rgba(255, 255, 255, .95);
+    padding: 40px;
+}
+.info{
+    text-align: center;
+}
+hr{
+    margin-top: 0;
+}
+.Oneletrajz ul li{
+    list-style: none;
+    padding: 2px 0;
+    margin: 2px 0;
+    float: initial;
+}
+.Oneletrajz a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: medium;
+}
+.Oneletrajz a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.Oneletrajz img{
+    margin: 0 20px;
+    float: right;
+    height: 180px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 0px 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.Oneletrajz h1{
+    color: royalblue;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+}
+.Oneletrajz h2{
+    font-size: x-large;
+    color: royalblue;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.Oneletrajz h3{
+    font-size: larger;
+    color: royalblue;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.Oneletrajz h4{
+    color: royalblue;
+    margin-top: 3px;
+    padding-top: 3px;
+    margin-bottom: 3px;
+    padding-bottom: 0;
+    font-size: 18px;
+}
+.Oneletrajz p{
+    line-height: 1;
+    padding: 3px 3px;
+    margin: 3px 3px;
+}
+.tablazat  {
+    table-layout: fixed; 
+    max-width: 1200px;
+    height: auto;
+    border-collapse:collapse;
+    margin:0px auto;
+    box-shadow:  0 0 30px rgba(0, 0, 0, 1);
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    
+}
+.tablazat td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:14px;
+    padding:10px 5px;
+}
+.tablazat th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 5px;
+}
+.tablazat .orak{
+    background-color:rgba(126, 0, 0, 0.69);
+    text-align:center;
+    vertical-align:middle;
+    color: rgba(255, 255, 255, .85);
+}
+.tablazat .sarok{
+    column-width: 60px;
+    background-color:black;
+}
+.tablazat .foelemek{
+    column-width: 260px;
+    background-color:slategray;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    border-bottom:5px;
+    border-style: solid;
+    border-color: black;
+}
+.tablazat .ido{
+    column-width: 60px;
+    background-color:slategray;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    border-right: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.tablazat .ures{
+    background-color:rgba(255, 255, 255, .69);
+}
+.sakktabla{
+    width: 800px;
+    height: 800px;
+    table-layout: fixed; 
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0px auto;
+    box-shadow:  0 0 30px rgba(0, 0, 0, 1);
+}
+.sakktabla td{
+    height: 80px;
+    width: 80px;
+}
+.sakktabla .betus_felso{
+    transform: rotate(180deg);
+    background-color:rgb(70, 25, 5);
+    border-left: 0px; 
+    border-right: 0px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: #c08752;
+    border-style: solid;
+    color:#ffffff;
+    font-size:30px;
+    font-weight: 900;
+    text-align:center;
+}
+.sakktabla .bal_felso{
+    background-color:rgb(70, 25, 5);
+    border-left: 10px; 
+    border-right: 0px;
+    border-top: 10px;
+    border-bottom: 0px;
+    border-color: #c08752;
+    border-style: solid;
+}
+.sakktabla .jobb_felso{
+    background-color:rgb(70, 25, 5);
+    border-left: 0px; 
+    border-right: 10px;
+    border-top: 10px;
+    border-bottom: 0px;
+    border-color: #c08752;
+    border-style: solid;
+}
+.sakktabla .szamozott_B{
+    background-color:rgb(70, 25, 5);
+    border-left: 10px; 
+    border-right: 10px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: #c08752;
+    border-style: solid;
+    color:#ffffff;
+    font-size:30px;
+    font-weight: 900;
+    text-align:center;
+}
+.sakktabla .szamozott_J{
+    transform: rotate(180deg);
+    background-color:rgb(70, 25, 5);
+    border-left: 10px; 
+    border-right: 10px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: #c08752;
+    border-style: solid;
+    color:#ffffff;
+    font-size:30px;
+    font-weight: 900;
+    text-align:center;
+}
+.sakktabla .betus_also{
+    background-color:rgb(70, 25, 5);
+    border-left: 0px; 
+    border-right: 0px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: #c08752;
+    border-style: solid;
+    color:#ffffff;
+    font-size:30px;
+    font-weight: 900;
+    text-align:center;
+}
+.sakktabla .bal_also{
+    background-color:rgb(70, 25, 5);
+    border-left: 10px; 
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 10px;
+    border-color: #c08752;
+    border-style: solid;
+}
+.sakktabla .jobb_also{
+    background-color:rgb(70, 25, 5);
+    border-left: 0px; 
+    border-right: 10px;
+    border-top: 0px;
+    border-bottom: 10px;
+    border-color: #c08752;
+    border-style: solid;
+}
+.sakktabla .Fekete{
+    background-color:#000000;
+    text-align:center;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+}
+.sakktabla .Feher{
+    background-color:#ffffff;
+    text-align:center;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+}
+.galeria {
+    margin: 40px auto;
+    display: flex;
+	flex-flow: row wrap;
+  }
+  .videogaleria {
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+.galeria, .galeria > .column {
+    padding: 5px;
+  }
+  .videogaleria, .videogaleria > .column {
+    padding: 5px;
+  }
+.column {
+    float: left;
+    display: none;
+    margin: 0px auto;
+  }
+.galeria:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .videogaleria:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.galeria h4{
+    text-align: center;
+      padding: 10px 0;
+      margin: 10px 0;
+  }
+  .videogaleria h4{
+    padding: 5px 0;
+    margin: 5px 0;
+    vertical-align: bottom;
+}
+.videogaleria a{
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+}
+.kep {
+	flex: 1;
+    border-radius: 5px;
+    background-color: rgba(180, 180, 180, .25);
+    padding: 10px;
+    width: 250px;
+    height: 320px;
+    position: relative;
+  }
+  .kep p{
+      padding:0;
+      margin: 0;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+  }
+  .videok {
+	flex: 1;
+    border-radius: 5px;
+    background-color: rgba(180, 180, 180, .25);
+    padding: 10px;
+    width: 400px;
+    height: 460px;
+    position: relative;
+  }
+  .galeria a{
+      text-decoration: none;
+      color: black;
+  }
+  video {
+    margin: 5px 15px 0px 15px;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+}
+.videok p{
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, .05);
+    border-style:inset;
+}
+.videok:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+.kep img{
+      margin: 5px 15px 0px 15px;
+      padding: 5px 15px 0px 15px;
+      max-width: 200px;
+      max-height: 250px;
+      border-radius: 5px;
+  }
+.kep:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  }
+.show {
+    display: block;
+  }
+.butn {
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    margin: 15px auto;
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .rejtett{
+      display: none;
+      
+  }
+.butn:hover {
+    background-color: gray;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+  }  
+.butn.active {
+    background-color:rgba(153, 0, 0, .8);
+    color: white;
+  }
+.extra{
+    padding: 5px 0;
+    margin: 5px 0;
+    float: left;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 20%;
+}
+.CV_DL{
+    padding-top: 5px;
+    margin-top: 5px;
+    float: right;
+}

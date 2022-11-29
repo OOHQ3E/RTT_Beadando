@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type ="text/css" href="css/style.css">
+<link rel = "icon" type="image/png" href="./images/pic-favicon.png">
+<title>Képgaléria</title>
+</head>
+
+<body>
+    <div class="wrapper">
+       <header>
+           <h1>Képgaléria</h1>
+           <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="oneletrajz.html">Önéletrajz</a></li>
+                <li><a href="orarend.html">Órarend</a></li>
+                <li><a class="jelenlegi">Képgaléria</a></li>
+                <li><a href="videogyujtemeny.html">Videógyűjtemény</a></li>
+                <li><a href="sakktabla.html">Sakktábla</a></li>
+            </ul>
+        </nav>
+       </header>
+
+    <div class="content">
+    <main> 
+        <p class="info">Az itt lévő képek a saját munkáim, és elkészítési technika alapján lettek kategorizálva.<br>A kártyákra kattintva egy új lapon fog megnyílni a kép teljes méretben.</p>
+        <div id="kategoriagombok">
+            <button class="butn active" onclick="Kategorizalas('Minden')"> Összes Kép</button>
+            <button class="butn" onclick="Kategorizalas('oil')"> Olajpasztell</button>
+            <button class="butn" onclick="Kategorizalas('powder')"> Porpasztell</button>
+            <button class="butn" onclick="Kategorizalas('pen')"> Ceruza</button>
+            <button class="butn" onclick="Kategorizalas('poly')"> Polymer Clay</button>
+            <button class="butn" onclick="Kategorizalas('neg')"> Negatív / Nyomat</button>
+            <button class="butn" onclick="Kategorizalas('paint')"> Akril</button>
+          </div>
+          
+          <div class="galeria">
+            <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/cp_eye_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/cp_eye_oil_pastel.jpg" alt="Cyberpunk Szem">
+                  <h4>Cyberpunk Szem</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/fekete_hattyu_oil_pastel.jpg">
+                    <div class="kep">
+                  <img src="./images/artwork/oil/fekete_hattyu_oil_pastel.jpg" alt="Fekete-hattyú">
+                  <h4>Fekete-hattyú</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/forest_oil_pastel.jpg">
+                <div class="kep">  
+                  <img src="./images/artwork/oil/forest_oil_pastel.jpg" alt="Erdő">
+                  <h4>Erdő</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/hyperion_oil_pastel.jpg">
+                <div class="kep">                    
+                  <img src="./images/artwork/oil/hyperion_oil_pastel.jpg" alt="Hyperion">
+                  <h4>Hyperion</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/icy_lake_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/icy_lake_oil_pastel.jpg" alt="Jeges Tó">
+                  <h4>Jeges Tó</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/norden_lake_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/norden_lake_oil_pastel.jpg" alt="Északi Tó">
+                  <h4>Északi Tó</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/norden_mountain_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/norden_mountain_oil_pastel.jpg" alt="Északi Hegy">
+                  <h4>Északi Hegy</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/sunset_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/sunset_oil_pastel.jpg" alt="Naplemente">
+                  <h4>Naplemente</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column oil">
+                <a target="blank" href="./images/artwork/oil/tunnel_oil_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/oil/tunnel_oil_pastel.jpg" alt="Alagút">
+                  <h4>Alagút</h4><p class="number oil_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/backyard_sunset_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/backyard_sunset_powder_pastel.jpg" alt="Udvar Naplemente">
+                  <h4>Udvar Naplemente</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/bgy_sunset_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/bgy_sunset_powder_pastel.jpg" alt="Naplemente">
+                  <h4>Naplemente</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/kokava_snow_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/kokava_snow_powder_pastel.jpg" alt="Kokavai Tél">
+                  <h4>Kokavai Tél</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/mars_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/mars_powder_pastel.jpg" alt="Mars">
+                  <h4>Mars</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/mixed_sunsets_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/mixed_sunsets_powder_pastel.jpg" alt="Kevert Naplemente">
+                  <h4>Kevert Naplemente</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/sunny_forest_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/sunny_forest_powder_pastel.jpg" alt="Napos Erdő">
+                  <h4>Napos Erdő</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column powder">
+                <a target="blank" href="./images/artwork/powder/village_powder_pastel.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/powder/village_powder_pastel.jpg" alt="Falu Utca">
+                  <h4>Falu Utca</h4><p class="number powder_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column poly">
+                <a target="blank" href="./images/artwork/polymer/plague_doctor_polymer_clay.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/polymer/plague_doctor_polymer_clay.jpg" alt="Pestisdoktor">
+                  <h4>Pestisdoktor</h4><p class="number poly_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column poly">
+                <a target="blank" href="./images/artwork/polymer/teemochu_polymer_clay.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/polymer/teemochu_polymer_clay.jpg" alt="Teemochu">
+                  <h4>Teemochu</h4><p class="number poly_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column neg">
+                  <a target="blank" href="./images/artwork/negative/break_dance_negative.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/negative/break_dance_negative.jpg" alt="Break Tánc">
+                  <h4>Break Tánc</h4><p class="number neg_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column neg">
+                <a target="blank" href="./images/artwork/negative/csontvary_parafrazis_linocut.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/negative/csontvary_parafrazis_linocut.jpg" alt="Csontváry Parafrázis">
+                  <h4>Csontváry Parafrázis</h4><p class="number neg_number"></p>
+                </div>
+            </a>  
+              </div>
+              <div class="column neg">
+                <a target="blank" href="./images/artwork/negative/progress_negative.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/negative/progress_negative.jpg" alt="Gyógyulás folyamata">
+                  <h4>Gyógyulás folyamata</h4><p class="number neg_number"></p>
+                </div>
+            </a>  
+              </div>
+              <div class="column neg">
+                <a target="blank" href="./images/artwork/negative/st_vitus_cathedral_linocut.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/negative/st_vitus_cathedral_linocut.jpg" alt="Szent Vitus Katedrális">
+                  <h4>Szent Vitus Katedrális</h4><p class="number neg_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column neg">
+                <a target="blank" href="./images/artwork/negative/starry_night_negative.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/negative/starry_night_negative.jpg" alt="Csillagos Éjszaka">
+                  <h4>Csillagos Éjszaka</h4><p class="number neg_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column pen">
+                <a target="blank" href="./images/artwork/ceruza/devil_survivor_pencil.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/ceruza/devil_survivor_pencil.jpg" alt="Ölelés">
+                  <h4>Ölelés</h4><p class="number pen_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column pen">
+                <a target="blank" href="./images/artwork/ceruza/fox_pencil.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/ceruza/fox_pencil.jpg" alt="Róka">
+                  <h4>Róka</h4><p class="number pen_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column pen">
+                <a target="blank" href="./images/artwork/ceruza/minion_assassin_pencil.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/ceruza/minion_assassin_pencil.jpg" alt="Minion Assassin">
+                  <h4>Minion Assassin</h4><p class="number pen_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column pen">
+                <a target="blank" href="./images/artwork/ceruza/parrot_pencil.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/ceruza/parrot_pencil.jpg" alt="Papagáj">
+                  <h4>Papagáj</h4><p class="number pen_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column pen">
+                <a target="blank" href="./images/artwork/ceruza/self_tree_pencil.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/ceruza/self_tree_pencil.jpg" alt="Saját Fa">
+                  <h4>Saját Fa</h4><p class="number pen_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column paint">
+                <a target="blank" href="./images/artwork/akril/rose_acrylic.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/akril/rose_acrylic.jpg" alt="Rózsa">
+                  <h4>Rózsa</h4><p class="number paint_number"></p>
+                </div>
+            </a>
+              </div>
+              <div class="column paint">
+                <a target="blank" href="./images/artwork/akril/seasons_acrylic.jpg">
+                <div class="kep">
+                  <img src="./images/artwork/akril/seasons_acrylic.jpg" alt="Évszakok">
+                  <h4>Évszakok</h4> <p class="number paint_number"></p>
+                </div>
+            </a>
+              </div>
+          </div>
+
+          <script>
+            Kategorizalas("Minden")
+            function Kategorizalas(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "Minden") c = "";
+              for (i = 0; i < x.length; i++) {
+                Elrejtes(x[i], "show");
+                if (x[i].className.indexOf(c) > -1)
+                 Kategorizalt(x[i], "show");
+              }
+              if (c == "") {
+                let szamok = document.getElementsByClassName("number");
+                for (let i = 0; i < szamok.length; i++) {
+                  szamok[i].innerHTML = (i + 1 + ".");
+                }
+              }
+              else {
+                let szamok = document.getElementsByClassName(c + "_number");
+                for (let i = 0; i < szamok.length; i++) {
+                  szamok[i].innerHTML = (i + 1 + ".");
+                }
+              }
+            }
+            
+            function Kategorizalt(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) 
+                {element.className += " " + arr2[i];}
+              }
+            }
+            function Elrejtes(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            var Gombok = document.getElementById("kategoriagombok");
+            var btns = Gombok.getElementsByClassName("butn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+          </script>
+
+    </main>
+    </div>
+    <footer>
+        <div class="extra">© Bagoly Gábor - OOHQ3E, 2021 <br>Developed by Bagoly Gábor </div>
+    </footer>
+
+</div>
+</body>
+</html>
