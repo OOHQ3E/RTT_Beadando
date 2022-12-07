@@ -1,1 +1,1 @@
-mysql -u MYSQL_USER -p oohq3e < oohq3e.sql
+mysql -u MYSQL_USER -pMYSQL_PASSWORD  oohq3e < oohq3e.sql

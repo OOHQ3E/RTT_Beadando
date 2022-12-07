@@ -1,0 +1,33 @@
+  id integer [pk]
+  username text
+  email text
+  passwd text
+}
+table roles {
+  id integer [pk, ref: <> users.id]
+  role text
+}
+table cities{
+  zipCode integer [pk, ref: <> users.id]
+  name text
+}
+table jobs{
+  id integer [pk, ref: <> users.id]
+  name text
+}
+table posts{
+  id integer [pk]
+  author text [ref: > users.id]
+  content text
+  date datetime
+  likes integer
+  dislikes integer
+}
+table comments{
+  id integer [pk]
+  author text [ref: - users.id]
+  content text
+  likes integer
+  dislikes integer
+  postid integer [ref: > posts.id]
+}
